@@ -115,6 +115,18 @@ section img {
     margin-bottom: 20px;
 
 }
+.hero {
+   background-image: url('banner.jpg');
+   background-size: cover;
+   background-position: center;
+   height: 300px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   text-align: center;
+   font-size: 2em;
+}
 
 /* Profile Image Styling */
 
