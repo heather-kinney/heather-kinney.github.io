@@ -23,6 +23,29 @@ header h1 {
    margin: 0;
    width: 100%;
 }
+/* Welcome Section */
+.welcome {
+   text-align: center;
+   padding: 50px 20px;
+   background-color: #e3f2fd; /* Light blue background */
+}
+.profile-photo {
+   width: 150px;
+   border-radius: 50%; /* Circular image */
+   margin-bottom: 20px;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.welcome h2 {
+   font-size: 2em;
+   color: #2C3E50;
+}
+.welcome p {
+   font-size: 1.2em;
+   max-width: 600px;
+   margin: 0 auto; /* Center paragraph */
+   color: #555;
+   line-height: 1.6;
+}
 /* Navigation */
 nav ul {
    list-style: none;
