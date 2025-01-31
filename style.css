@@ -115,18 +115,6 @@ section img {
     margin-bottom: 20px;
 
 }
-.hero {
-   background-image: url('Image_1 2020-03-12_10-25-10.jpg');
-   background-size: cover;
-   background-position: center;
-   height: 300px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   color: white;
-   text-align: center;
-   font-size: 2em;
-}
 
 /* Profile Image Styling */
 
