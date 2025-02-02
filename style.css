@@ -3,77 +3,6 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
     color: #333;
-    text-align: center; /* Ensures all text inside body is centered */
-    margin: 0;
-}
-
-/* Center the Header */
-header {
-    background-color: #2C3E50;
-    color: white;
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers everything inside the header */
-    justify-content: center;
-    text-align: center;
-}
-
-/* Header Title */
-header h1 {
-    font-size: 2.5em;
-    margin: 0;
-    width: 100%;
-}
-
-/* Navigation */
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    background-color: #2C3E50;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-.hero {
-    text-align: center;
-    padding: 50px;
-    background-color: #e3f2fd; /* Light blue */
-}
-
-.profile-photo {
-    width: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-/* General Styling */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
     text-align: center;
     margin: 0;
 }
@@ -114,6 +43,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Biography Section */
 .bio {
     padding: 50px 20px;
     background-color: #e3f2fd; /* Light blue background */
@@ -130,7 +60,7 @@ nav ul li a:hover {
     line-height: 1.6;
 }
 
-/* Career Path */
+/* Career Path Section */
 .career-path {
     background-color: #f4f4f9;
     padding: 40px;
@@ -153,7 +83,7 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
-/* Leadership & Advisory Roles */
+/* Leadership & Advisory Roles Section */
 .leadership {
     background-color: #dff0d8;
     padding: 40px;
@@ -175,7 +105,7 @@ nav ul li a:hover {
     margin: 10px 0;
 }
 
-/* Personal Life & Hobbies */
+/* Personal Life & Hobbies Section */
 .personal {
     background-color: #fdf3e3;
     padding: 40px;
@@ -193,6 +123,7 @@ nav ul li a:hover {
     line-height: 1.6;
 }
 
+/* Footer Styling */
 footer {
     background-color: #2C3E50;
     color: white;
@@ -201,4 +132,74 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Home Page Specific Styling */
+.home-section {
+    padding: 50px 20px;
+    background-color: #e3f2fd;
+}
+
+.home-section h2 {
+    font-size: 2em;
+    color: #2C3E50;
+}
+
+.home-section p {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    background-color: #FFC107;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #FF9800;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .bio, .career-path, .leadership, .personal {
+        padding: 30px 15px;
+    }
+
+    .bio h2, .career-path h2, .leadership h2, .personal h2 {
+        font-size: 1.8em;
+    }
+
+    .bio p, .career-path p, .leadership li, .personal p {
+        font-size: 1.1em;
+    }
+
+    .cta-button {
+        font-size: 1.1em;
+        padding: 8px 16px;
+    }
 }
