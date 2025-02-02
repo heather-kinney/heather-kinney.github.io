@@ -118,3 +118,42 @@ footer {
     padding: 40px;
     border-radius: 8px;
 }
+/* Career Path Flowchart */
+.career-path {
+    background-color: #e3f2fd;
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.flowchart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.step {
+    background-color: #ffffff;
+    border: 2px solid #2C3E50;
+    border-radius: 8px;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    width: 220px;
+    text-align: center;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.step span {
+    display: block;
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+}
+
+.arrow {
+    font-size: 2em;
+    color: #2C3E50;
+}
