@@ -172,3 +172,18 @@ footer {
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
+/* Career Path Section */
+.career-path {
+    background-color: #e3f2fd;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.mermaid {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
