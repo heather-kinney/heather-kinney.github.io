@@ -30,16 +30,19 @@
 <!-- Career Path Flowchart -->
 <section class="career-path">
     <h2>My Career Path</h2>
-    <div class="flowchart">
-        <div class="step">🎓 B.S. Marine Biology<br><span>Roger Williams University</span></div>
-        <div class="arrow">➡️</div>
-        <div class="step">🎓 M.A. Marine Affairs<br><span>University of Rhode Island</span></div>
-        <div class="arrow">➡️</div>
-        <div class="step">🔬 Research Assistant<br><span>[Previous Org]</span></div>
-        <div class="arrow">➡️</div>
-        <div class="step">🌊 Coastal Restoration Scientist<br><span>The Nature Conservancy</span></div>
+    <div class="mermaid">
+        graph TD;
+        BS[B.S. Marine Biology<br>Roger Williams University] --> MA[M.A. Marine Affairs<br>University of Rhode Island];
+        MA --> RA[Research Assistant<br>[Previous Org]];
+        RA --> CRS[Coastal Restoration Scientist<br>The Nature Conservancy];
     </div>
 </section>
+
+<!-- Include Mermaid.js Script -->
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({startOnLoad:true});
+</script>
 
 <!-- Leadership & Advisory Panels -->
 <section class="leadership">
