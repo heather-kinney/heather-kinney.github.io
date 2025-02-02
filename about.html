@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Heather Kinney</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -22,123 +22,56 @@
     </nav>
 </header>
 
-<section class="about">
-    <h2>About Me</h2>
-    <p>Welcome! I'm a Coastal Restoration Scientist with a passion for marine conservation and habitat restoration. Below, you can explore my journey from education to work experience, research, and beyond.</p>
+<section class="bio">
+    <h2>Biography</h2>
+    <p>I am a Coastal Restoration Scientist at The Nature Conservancy, working on marine and coastal ecology in Rhode Island. I received my M.A. in Marine Affairs from the University of Rhode Island and my B.S. in Marine Biology from Roger Williams University.</p>
 </section>
 
-<!-- Tabs or Accordion Style -->
-<section class="tabs">
-    <div class="tab-buttons">
-        <button class="tab-button active" onclick="openTab('education')">Education & Certifications</button>
-        <button class="tab-button" onclick="openTab('work')">Work Experience</button>
-        <button class="tab-button" onclick="openTab('research')">Research</button>
-        <button class="tab-button" onclick="openTab('teaching')">Teaching & Outreach</button>
-        <button class="tab-button" onclick="openTab('leadership')">Leadership & Advisory Roles</button>
+<!-- Accordion Section for Career Path -->
+<div class="accordion-section">
+    <input type="checkbox" id="career-path" class="accordion-input">
+    <label for="career-path" class="accordion-label">My Career Path</label>
+    <div class="accordion-content">
+        <p><strong>Education:</strong> M.A. in Marine Affairs, University of Rhode Island, 2017 | B.S. in Marine Biology, Roger Williams University, 2014</p>
+        <p><strong>Current Position:</strong> Coastal Restoration Scientist at The Nature Conservancy (08/2022 - Present)</p>
+        <p><strong>Previous Experience:</strong> Coastal Restoration Technician, Seasonal Grow-Out Technician, Research Assistant, and Water Quality Tester</p>
     </div>
+</div>
 
-    <div id="education" class="tab-content">
-        <h3>Education & Certifications</h3>
-        <ul>
-            <li><strong>M.A. in Marine Affairs</strong>, University of Rhode Island, May 2017</li>
-            <li><strong>B.S. in Marine Biology, Minor in Sustainability Studies</strong>, Roger Williams University, May 2014</li>
-            <li><strong>Captain’s License</strong> (Operator of Uninspected Passage Vessels – 25 ton), October 2018</li>
-            <li><strong>SCUBA Certifications</strong>: Rescue Diver & Scientific Diver, October 2018</li>
-        </ul>
-    </div>
-
-    <div id="work" class="tab-content">
-        <h3>Work Experience</h3>
-        <div class="job">
-            <h4>Coastal Restoration Scientist</h4>
-            <p><strong>The Nature Conservancy, Rhode Island</strong> — 08/2022 - Present</p>
-            <ul>
-                <li>Manage and conduct fieldwork related to fish habitat enhancement, oyster restoration, artificial reef implementation, fish passage detection, and scallop monitoring.</li>
-                <li>Lead data analysis and scientific writing for quarterly/yearly reports.</li>
-                <li>Supervise field staff including undergraduate interns and seasonal assistants.</li>
-                <li>Manage the field office lab, including inventory and protocol development for safety standards.</li>
-            </ul>
-        </div>
-        <!-- Add additional job experiences as needed -->
-    </div>
-
-    <div id="research" class="tab-content">
-        <h3>Research Experience</h3>
-        <div class="research-item">
-            <h4>Research Assistant</h4>
-            <p><strong>Rhode Island Local Agriculture and Seafood Act Grant Program</strong> — 06/2015 - 09/2015</p>
-            <ul>
-                <li>Monitored seasonal variation in food levels along a transect in Ninigret Pond.</li>
-                <li>Compiled oyster survival and growth data at various stocking densities.</li>
-            </ul>
-        </div>
-        <!-- Add additional research items as needed -->
-    </div>
-
-    <div id="teaching" class="tab-content">
-        <h3>Teaching & Outreach</h3>
-        <ul>
-            <li><strong>Teaching Assistant</strong>, University of Rhode Island, 09/2015 - Present (Introductory Biology & Biology of Algae Labs)</li>
-            <li><strong>Expedition Sewee Instructor/Naturalist</strong>, Camp Sewee, 02/2015 - 06/2015</li>
-            <li><strong>Workshops & Conferences</strong>: Women@URI, Coastal and Estuarine Research Federation, American Fisheries Society, RI Stormwater Expo</li>
-        </ul>
-    </div>
-
-    <div id="leadership" class="tab-content">
-        <h3>Leadership & Advisory Roles</h3>
+<!-- Accordion Section for Leadership Roles -->
+<div class="accordion-section">
+    <input type="checkbox" id="leadership" class="accordion-input">
+    <label for="leadership" class="accordion-label">Leadership & Advisory Roles</label>
+    <div class="accordion-content">
         <ul>
             <li>Member, Rhode Island Coastal Restoration Advisory Committee</li>
             <li>Advisory Panelist, Northeast Fish Habitat Partnership</li>
             <li>Speaker, Marine Science Outreach Programs</li>
         </ul>
     </div>
-</section>
+</div>
 
-<!-- Timeline -->
-<section class="timeline">
-    <h2>My Career Timeline</h2>
-    <div class="timeline-item">
-        <span class="year">2017</span>
-        <div class="timeline-content">
-            <h4>Master of Arts in Marine Affairs</h4>
-            <p>University of Rhode Island</p>
-        </div>
+<!-- Accordion Section for Beyond Science -->
+<div class="accordion-section">
+    <input type="checkbox" id="beyond-science" class="accordion-input">
+    <label for="beyond-science" class="accordion-label">Beyond Science</label>
+    <div class="accordion-content">
+        <p>When I’m not working on coastal restoration, you’ll find me hiking along Rhode Island’s shorelines, kayaking, or exploring new seafood recipes in my kitchen. I also enjoy volunteering with community cleanups and advocating for sustainable fisheries.</p>
     </div>
+</div>
 
-    <div class="timeline-item">
-        <span class="year">2018</span>
-        <div class="timeline-content">
-            <h4>SCUBA Certifications & Captain’s License</h4>
-            <p>Rescue Diver, Scientific Diver, and Captain's License</p>
-        </div>
+<!-- Accordion Section for Workshops & Conferences -->
+<div class="accordion-section">
+    <input type="checkbox" id="workshops-conferences" class="accordion-input">
+    <label for="workshops-conferences" class="accordion-label">Workshops & Conferences</label>
+    <div class="accordion-content">
+        <ul>
+            <li>2023 American Fisheries Society - Utilizing PIT Telemetry to Evaluate River Herring Passage Performance</li>
+            <li>2024 RI Stormwater Expo - Innovative Approaches to Pond Restoration</li>
+            <li>2019 Coastal and Estuarine Research Federation - Benthic Video Monitoring in Narragansett Bay</li>
+        </ul>
     </div>
-
-    <div class="timeline-item">
-        <span class="year">2022</span>
-        <div class="timeline-content">
-            <h4>Coastal Restoration Scientist</h4>
-            <p>The Nature Conservancy, Rhode Island</p>
-        </div>
-    </div>
-
-    <!-- Add more milestones -->
-</section>
-
-<!-- Leadership & Advisory Panels -->
-<section class="leadership">
-    <h2>Leadership & Advisory Roles</h2>
-    <ul>
-        <li>🌿 Member, Rhode Island Coastal Restoration Advisory Committee</li>
-        <li>🐟 Advisory Panelist, Northeast Fish Habitat Partnership</li>
-        <li>📢 Speaker, Marine Science Outreach Programs</li>
-    </ul>
-</section>
-
-<!-- Personal Life & Hobbies -->
-<section class="personal">
-    <h2>Beyond Science</h2>
-    <p>When I’m not working on coastal restoration, you’ll find me hiking along Rhode Island’s shorelines, kayaking, or exploring new seafood recipes in my kitchen. I also enjoy volunteering with community cleanups and advocating for sustainable fisheries.</p>
-</section>
+</div>
 
 <footer>
     <p>&copy; 2025 Heather Kinney. All rights reserved.</p>
