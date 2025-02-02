@@ -34,48 +34,29 @@
         graph TD;
         
         %% Education
-        A[University of Rhode Island<br>MA in Marine Affairs<br>2017] -->|Advanced Studies| B[Roger Williams University<br>BS in Marine Biology<br>2014];
-
-        %% Certifications
-        C[Captain's License - OUPV<br>2018]:::cert -->|Additional Training| A;
-        D[SCUBA Certifications<br>Rescue & Scientific Diver<br>2018]:::cert -->|Diving Skills| A;
+        A[University of Rhode Island<br>MA in Marine Affairs<br>2017] --> B[Roger Williams University<br>BS in Marine Biology<br>2014];
 
         %% Work Experience
-        B -->|First Research Role| E[Research Assistant<br>RWU Shellfish Aquaculture<br>2012-2014];
-        E -->|Field Research| F[Research Assistant<br>Oyster Growth Monitoring<br>2015];
+        B --> E[Research Assistant<br>RWU Shellfish Aquaculture<br>2012-2014];
+        E --> F[Research Assistant<br>Oyster Growth Monitoring<br>2015];
+        F --> G[Coastal Restoration Science Technician I<br>TNC<br>2017-2021];
+        G --> H[Coastal Restoration Scientist<br>TNC<br>2022-Present];
 
-        %% Professional Career at TNC
-        F -->|Entry Level| G[Coastal Restoration Science Technician I<br>TNC<br>2017-2021];
-        G -->|Promotion| H[Coastal Restoration Science Technician II<br>TNC<br>2022];
-        H -->|Current Role| I[Coastal Restoration Scientist<br>TNC<br>2022-Present];
-
-        %% Other Positions
-        B -->|Teaching| J[TA - Biology Labs<br>URI<br>2015-Present];
-        J -->|Environmental Education| K[Instructor/Naturalist<br>Camp Sewee<br>2015];
-
-        %% Workshops and Conferences
-        I -->|Knowledge Expansion| L[Workshops & Conferences<br>(CMECS, AFS, CERF, RI Stormwater Expo)];
+        %% Other Roles
+        B --> J[TA - Biology Labs<br>URI<br>2015-Present];
+        J --> K[Instructor/Naturalist<br>Camp Sewee<br>2015];
 
         %% Styling
-        classDef cert fill:#FFC107,stroke:#333,stroke-width:2px;
         classDef career fill:#2C3E50,stroke:#fff,stroke-width:2px,color:#fff;
-        classDef research fill:#4CAF50,stroke:#fff,stroke-width:2px,color:#fff;
-        classDef teaching fill:#2196F3,stroke:#fff,stroke-width:2px,color:#fff;
-
-        class A,B,F,E career;
-        class G,H,I career;
-        class J,K teaching;
-        class C,D cert;
-        class L research;
+        class A,B,E,F,G,H career;
+        class J,K fill:#2196F3,stroke:#fff,stroke-width:2px,color:#fff;
     </div>
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.3.0/mermaid.min.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        console.log("Initializing Mermaid...");
         mermaid.initialize({ startOnLoad: true });
-        mermaid.contentLoaded();
     });
 </script>
 
