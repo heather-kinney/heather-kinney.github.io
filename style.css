@@ -203,3 +203,59 @@ footer {
         padding: 8px 16px;
     }
 }
+
+/* Home Page Section */
+.home-section {
+    padding: 50px 20px;
+    background-color: #e3f2fd; /* Light blue background */
+}
+
+.home-section h2 {
+    font-size: 2em;
+    color: #2C3E50;
+}
+
+.home-section p {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Profile Box Styling */
+.profile-box {
+    border: 2px solid #2C3E50; /* Dark border around the box */
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff; /* White background for the box */
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Profile Image Styling */
+.profile-img {
+    width: 100%;
+    max-width: 150px; /* Adjust based on the size you want */
+    border-radius: 50%; /* Circular shape */
+    margin-bottom: 15px;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    background-color: #FFC107;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #FF9800;
+}
