@@ -73,7 +73,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.3.0/mermaid.min.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
+        console.log("Initializing Mermaid...");
         mermaid.initialize({ startOnLoad: true });
+        mermaid.contentLoaded();
     });
 </script>
 
