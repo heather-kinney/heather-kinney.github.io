@@ -3,6 +3,77 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
     color: #333;
+    text-align: center; /* Ensures all text inside body is centered */
+    margin: 0;
+}
+
+/* Center the Header */
+header {
+    background-color: #2C3E50;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers everything inside the header */
+    justify-content: center;
+    text-align: center;
+}
+
+/* Header Title */
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    width: 100%;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #e3f2fd; /* Light blue */
+}
+
+.profile-photo {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
     text-align: center;
     margin: 0;
 }
