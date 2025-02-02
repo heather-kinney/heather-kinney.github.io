@@ -1,110 +1,85 @@
 /* General Styling */
 body {
-   font-family: 'Arial', sans-serif;
-   background-color: #f4f4f9;
-   color: #333;
-   text-align: center; /* Ensures all text inside body is centered */
-   margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+    margin: 0;
 }
 
-/* Center the Header */
 header {
-   background-color: #2C3E50;
-   color: white;
-   padding: 40px 20px;
-   display: flex;
-   flex-direction: column;
-   align-items: center; /* Centers everything inside the header */
-   justify-content: center;
-   text-align: center;
+    background-color: #2C3E50;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-/* Header Title */
 header h1 {
-   font-size: 2.5em;
-   margin: 0;
-   width: 100%;
+    font-size: 2.5em;
+    margin: 0;
 }
 
-/* Navigation */
 nav ul {
-   list-style: none;
-   padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 nav ul li {
-   display: inline;
-   margin-right: 20px;
+    display: inline;
+    margin-right: 20px;
 }
 
 nav ul li a {
-   color: white;
-   text-decoration: none;
-   font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
 }
 
 nav ul li a:hover {
-   text-decoration: underline;
+    text-decoration: underline;
 }
 
-/* Welcome Section */
-.welcome {
-   text-align: center;
-   padding: 50px 20px;
-   background-color: #e3f2fd; /* Light blue background */
-}
-
-.profile-photo {
-   width: 250px;
-   border-radius: 50%; /* Circular image */
-   margin-bottom: 20px;
-   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.welcome h2 {
-   font-size: 2em;
-   color: #2C3E50;
-}
-
-.welcome p {
-   font-size: 1.2em;
-   max-width: 600px;
-   margin: 0 auto; /* Center paragraph */
-   color: #555;
-   line-height: 1.6;
-}
-
-/* Footer */
-footer {
-   background-color: #2C3E50;
-   color: white;
-   text-align: center;
-   padding: 20px;
-   position: relative;
-   bottom: 0;
-   width: 100%;
-}
-
-/* About Page Styling */
-
-/* Biography Section */
 .bio {
+    padding: 50px 20px;
+    background-color: #e3f2fd; /* Light blue background */
+}
+
+.bio h2 {
+    font-size: 2em;
+    color: #2C3E50;
+}
+
+.bio p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Career Path */
+.career-path {
     background-color: #f4f4f9;
     padding: 40px;
-    text-align: center;
 }
 
-/* Career Path Flowchart */
-.career-path {
-    background-color: #e3f2fd;
-    padding: 40px;
-    text-align: center;
-    border-radius: 8px;
+.career-path h2 {
+    font-size: 2em;
+    color: #2C3E50;
+}
+
+.flowchart {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.8;
+    text-align: left;
+    margin-top: 20px;
 }
 
 .flowchart p {
-    font-size: 1.2em;
-    margin: 10px 0;
+    margin-bottom: 10px;
 }
 
 /* Leadership & Advisory Roles */
@@ -112,6 +87,11 @@ footer {
     background-color: #dff0d8;
     padding: 40px;
     border-radius: 8px;
+}
+
+.leadership h2 {
+    font-size: 2em;
+    color: #2C3E50;
 }
 
 .leadership ul {
@@ -130,54 +110,24 @@ footer {
     padding: 40px;
     border-radius: 8px;
 }
-.timeline {
-    width: 80%;
-    max-width: 1000px;
-    margin: 50px auto;
-    padding: 0 20px;
-    font-family: Arial, sans-serif;
-}
 
-.timeline-item {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 30px;
-    position: relative;
-}
-
-.timeline-date {
-    width: 150px;
-    font-size: 1.2em;
-    font-weight: bold;
+.personal h2 {
+    font-size: 2em;
     color: #2C3E50;
-    text-align: right;
-    padding-right: 20px;
 }
 
-.timeline-content {
-    flex-grow: 1;
-    background-color: #f4f4f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+.personal p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
 }
 
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 0;
-    width: 2px;
-    height: 100%;
+footer {
     background-color: #2C3E50;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
-.timeline-item:nth-child(odd) .timeline-content {
-    margin-left: 20px;
-}
-
-.timeline-item:nth-child(even) .timeline-content {
-    margin-right: 20px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
