@@ -74,3 +74,47 @@ footer {
    bottom: 0;
    width: 100%;
 }
+/* About Page Styling */
+
+/* Biography Section */
+.bio {
+    background-color: #f4f4f9;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Career Path Flowchart */
+.career-path {
+    background-color: #e3f2fd;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.flowchart p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Leadership & Advisory Roles */
+.leadership {
+    background-color: #dff0d8;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.leadership ul {
+    list-style: none;
+    padding: 0;
+}
+
+.leadership li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Personal Life & Hobbies */
+.personal {
+    background-color: #fdf3e3;
+    padding: 40px;
+    border-radius: 8px;
+}
