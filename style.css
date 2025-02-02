@@ -1,79 +1,134 @@
 /* General Styling */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    margin: 0;
-    text-align: center;
+   font-family: 'Arial', sans-serif;
+   background-color: #f4f4f9;
+   color: #333;
+   text-align: center; /* Ensures all text inside body is centered */
+   margin: 0;
 }
-
-/* Header */
+/* Center the Header */
 header {
-    background-color: #2C3E50;
-    color: white;
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+   background-color: #2C3E50;
+   color: white;
+   padding: 40px 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center; /* Centers everything inside the header */
+   justify-content: center;
+   text-align: center;
 }
-
 /* Header Title */
 header h1 {
-    font-size: 2.5em;
-    margin: 0;
+   font-size: 2.5em;
+   margin: 0;
+   width: 100%;
 }
 
 /* Navigation */
 nav ul {
-    list-style: none;
-    padding: 0;
+   list-style: none;
+   padding: 0;
 }
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+   display: inline;
+   margin-right: 20px;
 }
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
+   color: white;
+   text-decoration: none;
+   font-size: 1.2em;
 }
 nav ul li a:hover {
-    text-decoration: underline;
+   text-decoration: underline;
 }
 
-/* Home Page Section */
-.home-section {
+/* Welcome Section */
+.welcome {
+    text-align: center;
     padding: 50px 20px;
     background-color: #e3f2fd; /* Light blue background */
+    border: 3px solid #2C3E50; /* Border around the welcome section */
+    border-radius: 8px; /* Rounded corners for the box */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+.profile-img {
+    width: 200px; /* Set the width for the profile image */
+    height: 200px; /* Set the height to match the width */
+    border-radius: 50%; /* Circular shape for the profile image */
+    margin-bottom: 20px; /* Spacing below the image */
+    border: 5px solid #2C3E50; /* Border around the image */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for image */
+}
+.welcome h2 {
+   font-size: 2em;
+   color: #2C3E50;
+}
+.welcome p {
+   font-size: 1.2em;
+   max-width: 600px;
+   margin: 0 auto; /* Center paragraph */
+   color: #555;
+   line-height: 1.6;
 }
 
-/* Profile Box Styling */
-.profile-box {
-    border: 2px solid #2C3E50; /* Dark border around the box */
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #fff; /* White background for the box */
-    max-width: 400px;
-    margin: 20px auto;
+/* Biography Section */
+.bio {
+    background-color: #f4f4f9;
+    padding: 40px;
     text-align: center;
 }
 
-/* Profile Image Styling */
-.profile-img {
-    width: 100%;
-    max-width: 150px; /* Adjust based on the size you want */
-    border-radius: 50%; /* Circular shape */
-    margin-bottom: 15px;
+/* Career Path Flowchart */
+.career-path {
+    background-color: #e3f2fd;
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.flowchart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flowchart p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Leadership & Advisory Roles */
+.leadership {
+    background-color: #dff0d8;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.leadership ul {
+    list-style: none;
+    padding: 0;
+}
+
+.leadership li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Personal Life & Hobbies */
+.personal {
+    background-color: #fdf3e3;
+    padding: 40px;
+    border-radius: 8px;
 }
 
 /* Footer */
 footer {
-    background-color: #2C3E50;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+   background-color: #2C3E50;
+   color: white;
+   text-align: center;
+   padding: 20px;
+   position: relative;
+   bottom: 0;
+   width: 100%;
 }
