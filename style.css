@@ -117,76 +117,87 @@ section h2 {
 }
 
 
-/* General Layout Styling */
-section {
-    margin-bottom: 40px;
+/* Accordion Style */
+.accordion-section {
+    margin-bottom: 10px;
 }
 
-h2 {
-    font-size: 2em;
-    color: #2C3E50;
-    margin-bottom: 20px;
-}
-
-/* Tabs */
-.tab-buttons {
-    display: flex;
-    gap: 10px;
-}
-
-.tab-button {
-    padding: 10px 20px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.tab-button:hover {
-    background-color: #ddd;
-}
-
-.tab-button.active {
-    background-color: #1E90FF;
+.accordion-label {
+    display: block;
+    background-color: #2C3E50;
     color: white;
+    padding: 18px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-align: left;
+    border: none;
+    width: 100%;
 }
 
-.tab-content {
+.accordion-label:hover {
+    background-color: #34495e;
+}
+
+.accordion-input {
     display: none;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
 }
 
-.tab-content.active {
+.accordion-input:checked + .accordion-label + .accordion-content {
     display: block;
 }
 
-/* Timeline */
-.timeline {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.accordion-content {
+    display: none;
+    background-color: #f4f4f9;
+    padding: 18px;
+    border-left: 4px solid #2C3E50;
 }
 
-.timeline-item {
-    display: flex;
-    align-items: center;
+.accordion-content ul {
+    list-style: none;
+    padding-left: 20px;
 }
 
-.timeline-item .year {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-right: 15px;
+.accordion-content li {
+    margin-bottom: 8px;
 }
 
-.timeline-item .timeline-content {
-    background-color: #f9f9f9;
+/* Styling for Biography Section */
+.bio {
+    padding: 20px;
+    background-color: #e3f2fd;
+}
+
+.bio p {
+    font-size: 1.1em;
+}
+
+/* Header and Footer Styling */
+header {
+    background-color: #2C3E50;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
     padding: 10px;
-    border-radius: 5px;
-}
-
-.timeline-item h4 {
-    margin: 0;
-    color: #333;
 }
