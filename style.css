@@ -364,7 +364,34 @@ footer {
 .social-links a:hover {
     color: #0077b5; /* LinkedIn blue or change as needed */
 }
+.contact-links {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: center;
+    gap: 15px; /* Adds spacing between icons */
+}
 
+.contact-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+}
+
+.contact-links img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+/* Stack links vertically on small screens */
+@media (max-width: 600px) {
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .contact-container {
     max-width: 700px;
     margin: 40px auto;
