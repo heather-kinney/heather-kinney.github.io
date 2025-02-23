@@ -3,120 +3,115 @@ body {
    font-family: 'Arial', sans-serif;
    background-color: #f4f4f9;
    color: #333;
-   text-align: center; /* Ensures all text inside body is centered */
+   text-align: center;
    margin: 0;
 }
-/* Center the Header */
+
+/* Header */
 header {
    background-color: #2C3E50;
    color: white;
    padding: 40px 20px;
    display: flex;
    flex-direction: column;
-   align-items: center; /* Centers everything inside the header */
+   align-items: center;
    justify-content: center;
    text-align: center;
 }
-/* Header Title */
+
 header h1 {
    font-size: 2.5em;
    margin: 0;
-   width: 100%;
 }
 
-/* Navigation */
 nav ul {
    list-style: none;
    padding: 0;
+   display: flex;
+   gap: 20px;
+   justify-content: center;
 }
+
 nav ul li {
    display: inline;
-   margin-right: 20px;
 }
+
 nav ul li a {
    color: white;
    text-decoration: none;
    font-size: 1.2em;
 }
+
 nav ul li a:hover {
    text-decoration: underline;
 }
+
 /* Welcome Section */
 .welcome {
-   text-align: center;
    padding: 50px 20px;
-   background-color: #e3f2fd; /* Light blue background */
+   background-color: #e3f2fd;
 }
+
 .profile-photo {
    width: 250px;
-   border-radius: 50%; /* Circular image */
+   border-radius: 50%;
    margin-bottom: 20px;
    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .welcome h2 {
    font-size: 2em;
    color: #2C3E50;
 }
+
 .welcome p {
    font-size: 1.2em;
    max-width: 600px;
-   margin: 0 auto; /* Center paragraph */
+   margin: 0 auto;
    color: #555;
    line-height: 1.6;
 }
+
 /* Footer */
 footer {
    background-color: #2C3E50;
    color: white;
    text-align: center;
    padding: 20px;
-   position: relative;
-   bottom: 0;
    width: 100%;
 }
-/* General Section Styling */
+
+/* Section Styling */
 section {
     margin: 40px 20px;
     padding: 20px;
     background-color: #ffffff;
-    border-radius: 10px; /* Softens the edges */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
-}
-
-/* Career Path Flowchart */
-.career-path {
-    background-color: #e8f4f8; /* Light blue background */
-    font-style: italic;
-}
-
-/* Leadership & Advisory */
-.leadership {
-    background-color: #f9f9f9;
-}
-
-/* Personal Life */
-.personal {
-    background-color: #f0f9f0; /* Light green background */
-}
-
-/* Biography Section */
-.bio {
-    background-color: #f9f9f9;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 30px;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Title Styling */
 section h2 {
     font-size: 2em;
     color: #2C3E50;
     margin-bottom: 10px;
 }
 
-/* Accordion Style */
+/* Specific Section Backgrounds */
+.career-path {
+    background-color: #e8f4f8;
+    font-style: italic;
+}
+
+.leadership,
+.bio {
+    background-color: #f9f9f9;
+}
+
+.personal {
+    background-color: #f0f9f0;
+}
+
+/* Accordion */
 .accordion-section {
     margin-bottom: 10px;
 }
@@ -161,72 +156,7 @@ section h2 {
     margin-bottom: 8px;
 }
 
-/* Styling for Biography Section */
-.bio {
-    padding: 20px;
-    background-color: #e3f2fd;
-}
-
-.bio p {
-    font-size: 1.1em;
-}
-
-/* Header and Footer Styling */
-header {
-    background-color: #2C3E50;
-    padding: 20px;
-    color: white;
-    text-align: center;
-}
-
-header nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-footer {
-    background-color: #2C3E50;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-/* General styles for header, nav, and footer remain the same... */
-header {
-  background-color: #2C3E50;
-  padding: 20px;
-  color: white;
-  text-align: center;
-}
-header nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-header nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-header nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-footer {
-  background-color: #2C3E50;
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
-
-/* Reading List Section */
+/* Reading List */
 .reading-list {
   max-width: 960px;
   margin: 40px auto;
@@ -241,14 +171,13 @@ footer {
   margin-bottom: 20px;
 }
 
-/* Books container with flex layout */
+/* Book Items */
 .books-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* Each book item */
 .book-item {
   display: flex;
   background-color: #f9f9f9;
@@ -257,11 +186,11 @@ footer {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   transition: transform 0.2s ease-in-out;
 }
+
 .book-item:hover {
   transform: scale(1.02);
 }
 
-/* Book cover styling */
 .book-cover {
   width: 100px;
   height: auto;
@@ -270,9 +199,9 @@ footer {
   border: 1px solid #ddd;
 }
 
-/* Book details styling */
 .book-details {
   flex: 1;
+  text-align: left;
 }
 
 .book-title {
@@ -293,20 +222,24 @@ footer {
   line-height: 1.5;
 }
 
-/* Responsive adjustments */
+/* Responsive Adjustments */
 @media (max-width: 600px) {
   .book-item {
     flex-direction: column;
     align-items: center;
   }
+
   .book-cover {
     margin-right: 0;
     margin-bottom: 10px;
   }
+
   .book-details {
     text-align: center;
   }
-}/* Research Page */
+}
+
+/* Research Projects */
 .research-projects {
     max-width: 900px;
     margin: 40px auto;
@@ -342,19 +275,21 @@ footer {
     color: #555;
 }
 
-.social-links {
+/* Social & Contact Links */
+.social-links,
+.contact-links {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
-.social-links li {
-    display: inline;
-}
-
-.social-links a {
+.social-links a,
+.contact-links a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: #2C3E50;
     font-size: 1.2em;
@@ -362,21 +297,7 @@ footer {
 }
 
 .social-links a:hover {
-    color: #0077b5; /* LinkedIn blue or change as needed */
-}
-.contact-links {
-    display: flex;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-    justify-content: center;
-    gap: 15px; /* Adds spacing between icons */
-}
-
-.contact-links a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #333;
-    font-size: 1em;
+    color: #0077b5;
 }
 
 .contact-links img {
@@ -392,6 +313,8 @@ footer {
         align-items: center;
     }
 }
+
+/* Contact Section */
 .contact-container {
     max-width: 700px;
     margin: 40px auto;
@@ -418,51 +341,15 @@ footer {
     text-decoration: underline;
 }
 
-.social-section {
-    margin-top: 20px;
-}
-
-.social-links {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.social-links li {
-    display: inline;
-}
-
-.social-links a {
-    text-decoration: none;
-    color: #2C3E50;
-    font-size: 1.2em;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: color 0.3s ease-in-out;
-}
-
-.social-links a:hover {
-    color: #0077b5; /* LinkedIn blue */
-}
-
-.social-links i {
-    font-size: 1.5em;
-}
-.goodreads-icon {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-    margin-right: 8px;
-    border-radius: 5px; /* Keeps the square shape but softens edges */
-}
+/* Social Icons */
+.goodreads-icon,
 .bluesky-icon {
     width: 20px;
     height: 20px;
     vertical-align: middle;
     margin-right: 8px;
-    border-radius: 50%;
 }
 
+.bluesky-icon {
+    border-radius: 50%;
+}
