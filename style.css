@@ -6,7 +6,6 @@ body {
    text-align: center; /* Ensures all text inside body is centered */
    margin: 0;
 }
-
 /* Center the Header */
 header {
    background-color: #2C3E50;
@@ -18,7 +17,6 @@ header {
    justify-content: center;
    text-align: center;
 }
-
 /* Header Title */
 header h1 {
    font-size: 2.5em;
@@ -28,42 +26,30 @@ header h1 {
 
 /* Navigation */
 nav ul {
-   display: flex;
-   justify-content: center;
+   list-style: none;
    padding: 0;
    margin: 0;
-   flex-wrap: wrap;  /* Allow items to wrap */
+   display: flex;
+   justify-content: center;
+   gap: 20px; /* Space out the navigation items */
+   background-color: #2C3E50; /* Navigation bar background color */
 }
 
 nav ul li {
-   list-style: none;
-   margin-right: 20px;
+   display: inline;
 }
 
 nav ul li a {
    color: white;
    text-decoration: none;
    font-size: 1.2em;
+   padding: 10px;
+   display: block;
 }
 
-/* Stack the navigation items on small screens */
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center the items */
-        width: 100%; /* Full width for stacking */
-    }
-
-    nav ul li {
-        margin-right: 0; /* Remove right margin when stacked */
-        margin-bottom: 10px; /* Add some spacing between items */
-        width: 100%; /* Make each item take up full width */
-    }
-
-    nav ul li a {
-        font-size: 1.5em; /* Increase font size for better readability */
-        text-align: center; /* Center-align the links */
-    }
+nav ul li a:hover {
+   background-color: #34495e; /* Darker shade for hover effect */
+   text-decoration: underline;
 }
 
 /* Welcome Section */
@@ -72,19 +58,16 @@ nav ul li a {
    padding: 50px 20px;
    background-color: #e3f2fd; /* Light blue background */
 }
-
 .profile-photo {
    width: 250px;
    border-radius: 50%; /* Circular image */
    margin-bottom: 20px;
    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 .welcome h2 {
    font-size: 2em;
    color: #2C3E50;
 }
-
 .welcome p {
    font-size: 1.2em;
    max-width: 600px;
@@ -92,7 +75,6 @@ nav ul li a {
    color: #555;
    line-height: 1.6;
 }
-
 /* Footer */
 footer {
    background-color: #2C3E50;
@@ -103,7 +85,6 @@ footer {
    bottom: 0;
    width: 100%;
 }
-
 /* General Section Styling */
 section {
     margin: 40px 20px;
@@ -189,6 +170,16 @@ section h2 {
 
 .accordion-content li {
     margin-bottom: 8px;
+}
+
+/* Styling for Biography Section */
+.bio {
+    padding: 20px;
+    background-color: #e3f2fd;
+}
+
+.bio p {
+    font-size: 1.1em;
 }
 
 /* Header and Footer Styling */
@@ -288,6 +279,34 @@ footer {
   line-height: 1.5;
 }
 
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .book-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .book-cover {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .book-details {
+    text-align: center;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  nav ul li {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  nav ul li a {
+    padding: 10px 0;
+  }
+}
+
 /* Research Page */
 .research-projects {
     max-width: 900px;
@@ -347,121 +366,75 @@ footer {
     color: #0077b5; /* LinkedIn blue or change as needed */
 }
 
-.contact-links {
-    display: flex;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-    justify-content: center;
-    gap: 15px; /* Adds spacing between icons */
-}
-
-.contact-links a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #333;
-    font-size: 1em;
-}
-
-.contact-links img {
-    width: 24px;
-    height: 24px;
-    margin-right: 5px;
-}
-
-/* Stack links vertically on small screens */
-@media (max-width: 600px) {
-    .contact-links {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center the items */
-        width: 100%; /* Full width for stacking */
-    }
-
-    nav ul li {
-        margin-right: 0; /* Remove right margin when stacked */
-        margin-bottom: 10px; /* Add some spacing between items */
-        width: 100%; /* Make each item take up full width */
-    }
-
-    nav ul li a {
-        font-size: 1.5em; /* Increase font size for better readability */
-        text-align: center; /* Center-align the links */
-    }
-
-    .contact-container {
-        padding: 20px;
-        text-align: center;
-    }
-
-    .social-links li {
-        margin-bottom: 10px; /* Add spacing between social icons */
-    }
-}
-
+/* Contact Section Styling */
 .contact-container {
     max-width: 700px;
     margin: 40px auto;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.contact-info {
-    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .contact-info p {
-    font-size: 1.1em;
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0;
 }
 
-.social-section h2 {
-    font-size: 1.8em;
+.contact-info a {
     color: #2C3E50;
-    margin-bottom: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.social-section {
+    margin-top: 20px;
 }
 
 .social-links {
+    list-style: none;
+    padding: 0;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 .social-links li {
-    list-style: none;
+    display: inline;
 }
 
 .social-links a {
     text-decoration: none;
+    color: #2C3E50;
     font-size: 1.2em;
-    color: #333;
     display: flex;
     align-items: center;
-}
-
-.social-links a i {
-    margin-right: 8px;
-}
-
-.social-links img {
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
+    gap: 8px;
+    transition: color 0.3s ease-in-out;
 }
 
 .social-links a:hover {
-    color: #0077b5; /* LinkedIn blue or change as needed */
+    color: #1da1f2; /* Blue for social media hover */
 }
 
-/* Footer Styling */
-footer p {
-    font-size: 1em;
-    color: #fff;
-    padding: 10px 20px;
+.social-links img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* Additional Small Tweaks for Alignment */
+ul.social-links {
+    list-style-type: none;
+    padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
