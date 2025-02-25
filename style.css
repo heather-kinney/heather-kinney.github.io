@@ -438,3 +438,22 @@ ul.social-links {
     justify-content: center;
     gap: 10px;
 }
+/* Responsive Navigation for Mobile */
+@media (max-width: 768px) {
+    nav ul {
+        flex-wrap: wrap; /* Allows items to wrap onto the next line */
+        justify-content: center; /* Centers the menu */
+        gap: 10px; /* Reduces space between items */
+        padding: 5px 0; /* Less padding */
+    }
+
+    nav ul li {
+        flex: 1 1 auto; /* Allows items to shrink and fit better */
+        text-align: center; /* Centers text */
+    }
+
+    nav ul li a {
+        font-size: 1em; /* Reduces font size */
+        padding: 8px 12px; /* Adjusts spacing */
+    }
+}
