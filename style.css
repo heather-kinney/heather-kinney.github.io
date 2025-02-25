@@ -3,560 +3,248 @@ body {
    font-family: 'Arial', sans-serif;
    background-color: #f4f4f9;
    color: #333;
-   text-align: center; /* Ensures all text inside body is centered */
    margin: 0;
+   padding: 0;
 }
+
 /* Center the Header */
 header {
    background-color: #2C3E50;
    color: white;
    padding: 40px 20px;
-   display: flex;
-   flex-direction: column;
-   align-items: center; /* Centers everything inside the header */
-   justify-content: center;
    text-align: center;
 }
+
 /* Header Title */
 header h1 {
    font-size: 2.5em;
    margin: 0;
-   width: 100%;
 }
 
-/* Navigation */
+/* ----- NAVIGATION (Dropdown Menu) ----- */
+nav {
+   position: relative;
+   background-color: #2C3E50;
+   text-align: center;
+   padding: 10px;
+}
+
 nav ul {
    list-style: none;
    padding: 0;
    margin: 0;
-   display: flex;
-   justify-content: center;
-   gap: 20px; /* Space out the navigation items */
-   background-color: #2C3E50; /* Navigation bar background color */
 }
 
 nav ul li {
-   display: inline;
+   display: block;
+   position: relative;
 }
 
+/* Dropdown Button */
 nav ul li a {
+   display: block;
    color: white;
    text-decoration: none;
    font-size: 1.2em;
    padding: 10px;
+}
+
+nav ul li:hover {
+   background-color: #34495e;
+}
+
+/* Dropdown Menu */
+nav ul li ul {
+   display: none;
+   position: absolute;
+   background-color: #2C3E50;
+   width: 200px;
+   left: 0;
+   top: 100%;
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   z-index: 1000;
+}
+
+nav ul li:hover ul {
    display: block;
 }
 
-nav ul li a:hover {
-   background-color: #34495e; /* Darker shade for hover effect */
-   text-decoration: underline;
+nav ul li ul li {
+   display: block;
+   width: 100%;
 }
 
-/* Welcome Section */
+nav ul li ul li a {
+   padding: 10px;
+   display: block;
+   color: white;
+   text-align: left;
+}
+
+nav ul li ul li a:hover {
+   background-color: #34495e;
+}
+
+/* ----- WELCOME SECTION ----- */
 .welcome {
    text-align: center;
    padding: 50px 20px;
-   background-color: #e3f2fd; /* Light blue background */
+   background-color: #e3f2fd;
 }
+
 .profile-photo {
    width: 250px;
-   border-radius: 50%; /* Circular image */
+   border-radius: 50%;
    margin-bottom: 20px;
    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-.welcome h2 {
-   font-size: 2em;
-   color: #2C3E50;
-}
+
 .welcome p {
    font-size: 1.2em;
    max-width: 600px;
-   margin: 0 auto; /* Center paragraph */
+   margin: 0 auto;
    color: #555;
    line-height: 1.6;
 }
-/* Footer */
+
+/* ----- EDUCATION & BACKGROUND SECTION ----- */
+.education-background {
+   max-width: 800px;
+   margin: 40px auto;
+   padding: 20px;
+   background-color: white;
+   border-radius: 10px;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+   text-align: center;
+}
+
+.education-background h2 {
+   font-size: 2em;
+   color: #2C3E50;
+}
+
+.education-item {
+   margin-bottom: 20px;
+   padding: 10px;
+   border-left: 4px solid #2C3E50;
+   text-align: left;
+}
+
+.education-item h3 {
+   font-size: 1.4em;
+   margin: 5px 0;
+   color: #2C3E50;
+}
+
+.education-item p {
+   font-size: 1.1em;
+   color: #555;
+}
+
+/* ----- CURRENT PROJECTS (Updated Formatting) ----- */
+.research-projects {
+   max-width: 900px;
+   margin: 40px auto;
+   padding: 20px;
+   background-color: white;
+   border-radius: 10px;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+   display: flex;
+   align-items: center;
+   background: #f5f5f5;
+   padding: 15px;
+   border-left: 5px solid #2C3E50;
+   margin-bottom: 20px;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
+}
+
+.project img {
+   width: 120px;
+   height: 80px;
+   object-fit: cover;
+   margin-right: 15px;
+   border-radius: 5px;
+}
+
+.project-info h3 {
+   font-size: 1.2em;
+   color: #2C3E50;
+   margin: 0;
+}
+
+.project-info p {
+   color: #555;
+   margin: 5px 0;
+}
+
+/* ----- SOCIAL LINKS ----- */
+.social-links {
+   list-style: none;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   gap: 15px;
+}
+
+.social-links li {
+   display: inline;
+}
+
+.social-links a {
+   text-decoration: none;
+   color: #2C3E50;
+   font-size: 1.2em;
+   transition: color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+   color: #0077b5;
+}
+
+/* ----- FOOTER ----- */
 footer {
    background-color: #2C3E50;
    color: white;
    text-align: center;
    padding: 20px;
    position: relative;
-   bottom: 0;
    width: 100%;
 }
-/* General Section Styling */
-section {
-    margin: 40px 20px;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px; /* Softens the edges */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
-}
 
-/* Career Path Flowchart */
-.career-path {
-    background-color: #e8f4f8; /* Light blue background */
-    font-style: italic;
-}
-
-/* Leadership & Advisory */
-.leadership {
-    background-color: #f9f9f9;
-}
-
-/* Personal Life */
-.personal {
-    background-color: #f0f9f0; /* Light green background */
-}
-
-/* Biography Section */
-.bio {
-    background-color: #f9f9f9;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Title Styling */
-section h2 {
-    font-size: 2em;
-    color: #2C3E50;
-    margin-bottom: 10px;
-}
-
-/* Accordion Style */
-.accordion-section {
-    margin-bottom: 10px;
-}
-
-.accordion-label {
-    display: block;
-    background-color: #2C3E50;
-    color: white;
-    padding: 18px;
-    font-size: 1.2em;
-    cursor: pointer;
-    text-align: left;
-    border: none;
-    width: 100%;
-}
-
-.accordion-label:hover {
-    background-color: #34495e;
-}
-
-.accordion-input {
-    display: none;
-}
-
-.accordion-input:checked + .accordion-label + .accordion-content {
-    display: block;
-}
-
-.accordion-content {
-    display: none;
-    background-color: #f4f4f9;
-    padding: 18px;
-    border-left: 4px solid #2C3E50;
-}
-
-.accordion-content ul {
-    list-style: none;
-    padding-left: 20px;
-}
-
-.accordion-content li {
-    margin-bottom: 8px;
-}
-
-/* Styling for Biography Section */
-.bio {
-    padding: 20px;
-    background-color: #e3f2fd;
-}
-
-.bio p {
-    font-size: 1.1em;
-}
-
-/* Header and Footer Styling */
-header {
-    background-color: #2C3E50;
-    padding: 20px;
-    color: white;
-    text-align: center;
-}
-
-header nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-footer {
-    background-color: #2C3E50;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
-/* Reading List Section */
-.reading-list {
-  max-width: 960px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-.reading-list h2 {
-  font-size: 1.8em;
-  color: #2C3E50;
-  border-bottom: 2px solid #2C3E50;
-  padding-bottom: 5px;
-  margin-bottom: 20px;
-}
-
-/* Books container with flex layout */
-.books-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-/* Each book item */
-.book-item {
-  display: flex;
-  background-color: #f9f9f9;
-  border-left: 4px solid #2C3E50;
-  padding: 15px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease-in-out;
-}
-.book-item:hover {
-  transform: scale(1.02);
-}
-
-/* Book cover styling */
-.book-cover {
-  width: 100px;
-  height: auto;
-  margin-right: 20px;
-  object-fit: cover;
-  border: 1px solid #ddd;
-}
-
-/* Book details styling */
-.book-details {
-  flex: 1;
-}
-
-.book-title {
-  font-size: 1.4em;
-  margin: 0;
-  color: #2C3E50;
-}
-
-.book-author {
-  font-size: 1.1em;
-  color: #555;
-  margin: 5px 0;
-}
-
-.book-blurb {
-  font-size: 1em;
-  color: #333;
-  line-height: 1.5;
-}
-
-/* Responsive adjustments */
-@media (max-width: 600px) {
-  .book-item {
-    flex-direction: column;
-    align-items: center;
-  }
-  .book-cover {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-  .book-details {
-    text-align: center;
-  }
-  
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-  nav ul li {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-  nav ul li a {
-    padding: 10px 0;
-  }
-}
-
-/* Research Page */
-.research-projects {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-}
-
-.project {
-    display: flex;
-    align-items: center;
-    background: #f5f5f5;
-    padding: 15px;
-    border-left: 5px solid #2C3E50;
-    margin-bottom: 20px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.project img {
-    width: 150px;
-    height: 100px;
-    object-fit: cover;
-    margin-right: 15px;
-    border-radius: 5px;
-}
-
-.project-info h3 {
-    margin: 0;
-    font-size: 1.2em;
-    color: #2C3E50;
-}
-
-.project-info p {
-    margin: 5px 0;
-    color: #555;
-}
-
-.social-links {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.social-links li {
-    display: inline;
-}
-
-.social-links a {
-    text-decoration: none;
-    color: #2C3E50;
-    font-size: 1.2em;
-    transition: color 0.3s ease-in-out;
-}
-
-.social-links a:hover {
-    color: #0077b5; /* LinkedIn blue or change as needed */
-}
-
-/* Contact Section Styling */
-.contact-container {
-    max-width: 700px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.contact-info p {
-    font-size: 1.2em;
-    color: #333;
-    margin: 10px 0;
-}
-
-.contact-info a {
-    color: #2C3E50;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-.social-section {
-    margin-top: 20px;
-}
-
-.social-links {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.social-links li {
-    display: inline;
-}
-
-.social-links a {
-    text-decoration: none;
-    color: #2C3E50;
-    font-size: 1.2em;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: color 0.3s ease-in-out;
-}
-
-.social-links a:hover {
-    color: #1da1f2; /* Blue for social media hover */
-}
-
-.social-links img {
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
-}
-
-/* Additional Small Tweaks for Alignment */
-ul.social-links {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-/* Hide default checkbox */
-#menu-toggle {
-    display: none;
-}
-
-/* Style the hamburger icon */
-.menu-icon {
-    display: none;
-    font-size: 2em;
-    cursor: pointer;
-    background-color: #2C3E50;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-
-/* Hide the menu initially */
-.nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-
-/* Responsive Styles */
+/* ----- RESPONSIVE DESIGN ----- */
 @media (max-width: 768px) {
-    .menu-icon {
-        display: block;
-    }
+   /* Adjust navigation */
+   nav ul {
+      text-align: left;
+   }
+   nav ul li {
+      display: block;
+      width: 100%;
+   }
+   nav ul li ul {
+      position: relative;
+      width: 100%;
+   }
 
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        gap: 0;
-        background-color: #2C3E50;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-    }
+   /* Stack projects */
+   .project {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+   .project img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+   }
 
-    .nav-menu li {
-        text-align: center;
-        padding: 10px 0;
-        border-bottom: 1px solid #444;
-    }
-
-    .nav-menu li a {
-        display: block;
-        color: white;
-        text-decoration: none;
-    }
-
-    /* Show menu when checkbox is checked */
-    #menu-toggle:checked + .menu-icon + .nav-menu {
-        display: flex;
-    }
-}
-/* Education & Background Section */
-.education-background {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.education-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.education-item {
-    background: white;
-    padding: 15px;
-    border-left: 5px solid #2C3E50;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-/* Research Projects Styling */
-.research-projects {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-}
-
-.project {
-    background: white;
-    padding: 20px;
-    border-left: 5px solid #2C3E50;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.project img {
-    width: 100%;
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-.project h3 {
-    margin: 10px 0;
-    font-size: 1.2em;
-    color: #2C3E50;
-}
-
-.project p {
-    color: #555;
-    font-size: 1em;
+   /* Center align text in sections */
+   .education-item, .project-info {
+      text-align: center;
+   }
 }
