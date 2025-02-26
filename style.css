@@ -295,7 +295,7 @@ footer {
   
   nav ul {
     flex-direction: column;
-    gap: 5px;
+    gap: 1px;
   }
   nav ul li {
     display: block;
