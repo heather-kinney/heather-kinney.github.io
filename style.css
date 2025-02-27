@@ -180,6 +180,7 @@ section h2 {
 
 .bio p {
     font-size: 1.1em;
+    text-align: justify;
 }
 
 /* Header and Footer Styling */
