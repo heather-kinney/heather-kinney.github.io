@@ -94,12 +94,6 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
 }
 
-/* Career Path Flowchart */
-.career-path {
-    background-color: #e8f4f8; /* Light blue background */
-    font-style: italic;
-}
-
 /* Leadership & Advisory */
 .leadership {
     background-color: #f9f9f9;
@@ -110,16 +104,38 @@ section {
     background-color: #f0f9f0; /* Light green background */
 }
 
-/* Biography Section */
+/* Styling for Biography Section */
 .bio {
-    background-color: #f9f9f9;
     max-width: 800px;
     margin: 0 auto;
-    padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #e3f2fd;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
+.bio p {
+    font-size: 1.1em;
+    text-align: left;
+}
+@media (min-width: 768px) {
+    .bio {
+        flex-direction: row; /* Side-by-side layout */
+        align-items: flex-start; /* Aligns content to the top */
+    }
+    
+    .about-text {
+        flex: 1; /* Allows text section to take up available space */
+    }
+    
+    .accordion-section {
+        flex: 1; /* Allows the accordion to take up available space */
+        max-width: 50%; /* Limits its width */
+    }
+}
 /* Title Styling */
 section h2 {
     font-size: 2em;
@@ -170,17 +186,6 @@ section h2 {
 
 .accordion-content li {
     margin-bottom: 8px;
-}
-
-/* Styling for Biography Section */
-.bio {
-    padding: 20px;
-    background-color: #e3f2fd;
-}
-
-.bio p {
-    font-size: 1.1em;
-    text-align: left; lo
 }
 
 /* Header and Footer Styling */
