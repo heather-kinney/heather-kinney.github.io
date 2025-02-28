@@ -111,6 +111,12 @@ section {
    gap: 20px;
 }
 .bio {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #e3f2fd;
    width: 60%;
 }
 
