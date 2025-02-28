@@ -113,7 +113,7 @@ section {
     padding: 20px;
     background-color: #e3f2fd;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
 }
 
