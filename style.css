@@ -105,6 +105,11 @@ section {
 }
 
 /* Styling for Biography Section */
+.about-container {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
 .bio {
     max-width: 800px;
     margin: 0 auto;
@@ -112,28 +117,27 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     background-color: #e3f2fd;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
 }
 
 .bio p {
     font-size: 1.1em;
     text-align: left;
 }
+.bio,accordion-section {
+   width: 100%;
+}
 @media (min-width: 768px) {
-    .bio {
+    .about-container {
         flex-direction: row; /* Side-by-side layout */
         align-items: flex-start; /* Aligns content to the top */
     }
     
-    .about-text {
-        flex: 1; /* Allows text section to take up available space */
+    .bio {
+        width: 60%; /* Allows text section to take up available space */
     }
     
     .accordion-section {
-        flex: 1; /* Allows the accordion to take up available space */
-        max-width: 50%; /* Limits its width */
+       width: 50%; /* Limits its width */
     }
 }
 /* Title Styling */
