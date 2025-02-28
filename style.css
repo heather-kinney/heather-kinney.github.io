@@ -111,21 +111,14 @@ section {
    gap: 20px;
 }
 .bio {
-    max-width: 800px;
-    margin: 0 auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    background-color: #e3f2fd;
+   width: 60%;
 }
 
 .bio p {
     font-size: 1.1em;
     text-align: left;
 }
-.bio,accordion-section {
-   width: 100%;
-}
+
 @media (min-width: 768px) {
     .about-container {
         flex-direction: row; /* Side-by-side layout */
@@ -136,8 +129,11 @@ section {
         width: 60%; /* Allows text section to take up available space */
     }
     
-    .accordion-section {
-       width: 50%; /* Limits its width */
+    .accordion-container {
+       width: 40%; /* Limits its width */
+       display: flex;
+       flex-direction: column;
+       gap: 10px
     }
 }
 /* Title Styling */
