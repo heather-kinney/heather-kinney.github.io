@@ -498,5 +498,8 @@ ul.social-links {
 @media screen and (max-width: 768px) {
     .media-text img {
         max-width: 150px; /* Makes images smaller on mobile */
+        height: auto;
+        display: block;
+        margin: 0 auto;
     }
 }
