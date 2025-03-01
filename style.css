@@ -497,6 +497,6 @@ ul.social-links {
 /* Adjust for smaller screens */
 @media screen and (max-width: 768px) {
     .media-text img {
-        max-width: 100%; /* Makes images smaller on mobile */
+        max-width: 150px; /* Makes images smaller on mobile */
     }
 }
