@@ -486,3 +486,17 @@ ul.social-links {
     color: #555;
     line-height: 1.5;
 }
+.media-text img {
+    width: 100%; /* Makes images responsive */
+    max-width: 600px; /* Set a reasonable max width for desktops */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 10px auto; /* Center images */
+}
+
+/* Adjust for smaller screens */
+@media screen and (max-width: 768px) {
+    .media-text img {
+        max-width: 100%; /* Makes images smaller on mobile */
+    }
+}
