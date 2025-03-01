@@ -486,7 +486,7 @@ ul.social-links {
     color: #555;
     line-height: 1.5;
 }
-.media-text img {
+.media img {
     width: 100%; /* Makes images responsive */
     max-width: 600px; /* Set a reasonable max width for desktops */
     height: auto; /* Maintain aspect ratio */
@@ -496,7 +496,7 @@ ul.social-links {
 
 /* Adjust for smaller screens */
 @media screen and (max-width: 768px) {
-    .media-text img {
+    .media img {
         max-width: 100%; /* Makes images smaller on mobile */
     }
 }
