@@ -511,3 +511,9 @@ header {
     color: white; /* Ensures text is readable over the image */
     padding: 20px;
 }
+.education-photo {
+    max-height: 80px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+    display: block; /* Centers image */
+    margin: 0 auto; /* Center alignment */
+}
