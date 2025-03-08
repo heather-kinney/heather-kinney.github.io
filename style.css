@@ -511,9 +511,20 @@ header {
     color: white; /* Ensures text is readable over the image */
     padding: 20px;
 }
-.education-photo {
-    max-height: 50px; /* Adjust height as needed */
-    width: auto; /* Maintain aspect ratio */
-    display: block; /* Centers image */
-    margin: 0 auto; /* Center alignment */
+.education-container {
+    display: flex;
+    flex-direction: column; /* Stack education items vertically */
+    gap: 20px; /* Space between each education item */
 }
+
+.education-item {
+    display: flex;
+    align-items: center; /* Aligns logo and text in the center */
+    gap: 20px; /* Space between logo and text */
+}
+
+.education-photo {
+    max-width: 80px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
