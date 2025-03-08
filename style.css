@@ -504,7 +504,7 @@ ul.social-links {
     }
 }
 header {
-    background-image: url('photos/IMG_3918.HEIC'); /* Replace with the actual path to your image */
+    background-image: url('photos/IMG_3918.jpg'); /* Replace with the actual path to your image */
     background-size: cover;
     background-position: center;
     color: white; /* Ensures text is readable over the image */
