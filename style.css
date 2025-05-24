@@ -527,3 +527,104 @@ header {
     max-width: 80px; /* Adjust width as needed */
     height: auto; /* Maintain aspect ratio */
 }
+
+.universal-section {
+    text-align: center;
+    margin: 60px auto; /* Default space for other sections */
+    max-width: 800px; /* Adjust width as needed */
+    padding: 20px;
+}
+.universal-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333; /* Optional: Adjust heading color */
+}
+ 
+.universal-section div {
+    margin-bottom: 20px;
+}
+ 
+.education-container, .interest, .project {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adds spacing between items */
+}
+ 
+.education-item, .project-info {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Adds spacing between the image and text */
+}
+ 
+.education-photo, .project img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 5px; /* Optional: Adds rounded corners */
+}
+.education-section {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 40px 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 80px auto; /* More space for the education section */
+ 
+}
+ 
+.education-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+   
+}
+ 
+.education-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between education items */
+}
+
+.education-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff; /* White background for each item */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for each item */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+ 
+.education-photo {
+    width: 100px; /* Set a fixed width */
+    height: 100px; /* Set a fixed height to make it square */
+    object-fit: contain; /* Ensures the entire image fits within the box */
+      border: 2px solid #707881; /* Optional: Add a border */
+}
+ 
+.education-details {
+    text-align: left; /* Aligns text to the right */
+    flex: 1; /* Allows the text container to take up remaining space */
+}
+ 
+.education-details h3 {
+    font-size: 1.1rem;
+    color: #707881; /* Highlighted color for degree title */
+    margin: 0;
+}
+ 
+.education-details p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 1.1rem;
+}
+ 
+.education-details p strong {
+    color: #333; /* Bold institution name */
+}
+ 
+.education-details p em {
+    font-style: italic;
+    color: #777; /* Subtle color for thesis title */
+}
