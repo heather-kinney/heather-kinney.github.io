@@ -1,443 +1,529 @@
 /* General Styling */
 body {
-   font-family: 'Arial', sans-serif;
-   background-color: #f4f4f9;
-   color: #333;
-   text-align: center; /* Ensures all text inside body is centered */
-   margin: 0;
+   font-family: 'Arial', sans-serif;
+   background-color: #f4f4f9;
+   color: #333;
+   text-align: center; /* Ensures all text inside body is centered */
+   margin: 0;
 }
 /* Center the Header */
 header {
-   background-color: #2C3E50;
-   color: white;
-   padding: 40px 20px;
-   display: flex;
-   flex-direction: column;
-   align-items: center; /* Centers everything inside the header */
-   justify-content: center;
-   text-align: center;
+   background-color: #2C3E50;
+   color: white;
+   padding: 40px 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center; /* Centers everything inside the header */
+   justify-content: center;
+   text-align: center;
 }
 /* Header Title */
 header h1 {
-   font-size: 2.5em;
-   margin: 0;
-   width: 100%;
-   color: #2C3E50;
+   font-size: 2.5em;
+   margin: 0;
+   width: 100%;
+   color: #2C3E50;
 }
- 
+
 /* Navigation */
 nav ul {
-   list-style: none;
-   padding: 0;
-   margin: 0;
-   display: flex;
-   justify-content: center;
-   gap: 10px; /* Space out the navigation items */
-   background-color: #2C3E50; /* Navigation bar background color */
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   justify-content: center;
+   gap: 10px; /* Space out the navigation items */
+   background-color: #2C3E50; /* Navigation bar background color */
 }
- 
+
 nav ul li {
-   display: inline;
+   display: inline;
 }
- 
+
 nav ul li a {
-   color: white;
-   text-decoration: none;
-   font-size: 1.5em;
-   padding: 5px;
-   display: block;
+   color: white;
+   text-decoration: none;
+   font-size: 1.2em;
+   padding: 5px;
+   display: block;
 }
- 
+
 nav ul li a:hover {
-   background-color: #34495e; /* Darker shade for hover effect */
-   text-decoration: underline;
+   background-color: #34495e; /* Darker shade for hover effect */
+   text-decoration: underline;
 }
- 
+
 /* Welcome Section */
 .welcome {
-   text-align: center;
-   padding: 50px 20px;
-   background-color: #e3f2fd; /* Light blue background */
+   text-align: center;
+   padding: 50px 20px;
+   background-color: #e3f2fd; /* Light blue background */
 }
 .profile-photo {
-   width: 350px;
-   border-radius: 50%; /* Circular image */
-   margin-bottom: 20px;
-   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+   width: 350px;
+   border-radius: 50%; /* Circular image */
+   margin-bottom: 20px;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 .welcome h2 {
-   font-size: 2em;
-   color: #2C3E50;
+   font-size: 2em;
+   color: #2C3E50;
 }
 .welcome p {
-   font-size: 1.2em;
-   max-width: 600px;
-   margin: 0 auto; /* Center paragraph */
-   color: #555;
-   line-height: 1.6;
+   font-size: 1.2em;
+   max-width: 600px;
+   margin: 0 auto; /* Center paragraph */
+   color: #555;
+   line-height: 1.6;
 }
 /* Footer */
 footer {
-   background-color: #2C3E50;
-   color: white;
-   text-align: center;
-   padding: 20px;
-   position: relative;
-   bottom: 0;
-   width: 100%;
+   background-color: #2C3E50;
+   color: white;
+   text-align: center;
+   padding: 20px;
+   position: relative;
+   bottom: 0;
+   width: 100%;
 }
 /* General Section Styling */
 section {
-    margin: 40px 20px;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px; /* Softens the edges */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+    margin: 40px 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px; /* Softens the edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
 }
- 
+
 /* Leadership & Advisory */
 .leadership {
-    background-color: #f9f9f9;
+    background-color: #f9f9f9;
 }
- 
+
 /* Personal Life */
 .personal {
-    background-color: #f0f9f0; /* Light green background */
+    background-color: #f0f9f0; /* Light green background */
 }
- 
+
 /* Styling for Biography Section */
 .about-container {
-   display: flex;
-   flex-direction: column;
-   gap: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
 }
 .bio {
-    max-width: 800px;
-    margin: 0 auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    background-color: #e3f2fd;
-   width: 60%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #e3f2fd;
+   width: 60%;
 }
- 
+
 .bio p {
-    font-size: 1.1em;
-    text-align: left;
+    font-size: 1.1em;
+    text-align: left;
 }
- 
+
 @media (min-width: 768px) {
-    .about-container {
-        flex-direction: row; /* Side-by-side layout */
-        align-items: flex-start; /* Aligns content to the top */
-    }
-   
-    .bio {
-        width: 60%; /* Allows text section to take up available space */
-    }
-   
-    .accordion-container {
-       width: 40%; /* Limits its width */
-       display: flex;
-       flex-direction: column;
-       gap: 10px
-    }
+    .about-container {
+        flex-direction: row; /* Side-by-side layout */
+        align-items: flex-start; /* Aligns content to the top */
+    }
+    
+    .bio {
+        width: 60%; /* Allows text section to take up available space */
+    }
+    
+    .accordion-container {
+       width: 40%; /* Limits its width */
+       display: flex;
+       flex-direction: column;
+       gap: 10px
+    }
 }
 /* Title Styling */
 section h2 {
-    font-size: 2em;
-    color: #2C3E50;
-    margin-bottom: 10px;
+    font-size: 2em;
+    color: #2C3E50;
+    margin-bottom: 10px;
 }
- 
+
 /* Accordion Style */
 .accordion-section {
-    margin-bottom: 10px;
+    margin-bottom: 10px;
 }
- 
+
 .accordion-label {
-    display: block;
-    background-color: #2C3E50;
-    color: white;
-    padding: 18px;
-    font-size: 1.2em;
-    cursor: pointer;
-    text-align: left;
-    border: none;
-    width: 100%;
+    display: block;
+    background-color: #2C3E50;
+    color: white;
+    padding: 18px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-align: left;
+    border: none;
+    width: 100%;
 }
- 
+
 .accordion-label:hover {
-    background-color: #34495e;
+    background-color: #34495e;
 }
- 
+
 .accordion-input {
-    display: none;
+    display: none;
 }
- 
+
 .accordion-input:checked + .accordion-label + .accordion-content {
-    display: block;
+    display: block;
 }
- 
+
 .accordion-content {
-    display: none;
-    background-color: #f4f4f9;
-    padding: 18px;
-    border-left: 4px solid #2C3E50;
+    display: none;
+    background-color: #f4f4f9;
+    padding: 18px;
+    border-left: 4px solid #2C3E50;
 }
- 
+
 .accordion-content ul {
-    list-style: none;
-    padding-left: 20px;
+    list-style: none;
+    padding-left: 20px;
 }
- 
+
 .accordion-content li {
-    margin-bottom: 8px;
+    margin-bottom: 8px;
 }
- 
+
 /* Header and Footer Styling */
 header {
-    background-color: #2C3E50;
-    padding: 20px;
-    color: white;
-    text-align: center;
+    background-color: #2C3E50;
+    padding: 20px;
+    color: white;
+    text-align: center;
 }
- 
+
 header nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
- 
+
 header nav ul li {
-    display: inline;
-    margin-right: 20px;
+    display: inline;
+    margin-right: 20px;
 }
- 
+
 header nav ul li a {
-    color: white;
-    text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
- 
+
 footer {
-    background-color: #2C3E50;
-    color: white;
-    text-align: center;
-    padding: 10px;
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
- 
+
 /* Reading List Section */
 .reading-list {
-  max-width: 960px;
-  margin: 40px auto;
-  padding: 0 20px;
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
- 
+
 .reading-list h2 {
-  font-size: 1.8em;
-  color: #2C3E50;
-  border-bottom: 2px solid #2C3E50;
-  padding-bottom: 5px;
-  margin-bottom: 20px;
+  font-size: 1.8em;
+  color: #2C3E50;
+  border-bottom: 2px solid #2C3E50;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
 }
- 
+
 /* Books container with flex layout */
 .books-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
- 
+
 /* Each book item */
 .book-item {
-  display: flex;
-  background-color: #f9f9f9;
-  border-left: 4px solid #2C3E50;
-  padding: 15px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease-in-out;
+  display: flex;
+  background-color: #f9f9f9;
+  border-left: 4px solid #2C3E50;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
 }
 .book-item:hover {
-  transform: scale(1.02);
+  transform: scale(1.02);
 }
- 
+
 /* Book cover styling */
 .book-cover {
-  width: 100px;
-  height: auto;
-  margin-right: 20px;
-  object-fit: cover;
-  border: 1px solid #ddd;
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+  object-fit: cover;
+  border: 1px solid #ddd;
 }
- 
+
 /* Book details styling */
 .book-details {
-  flex: 1;
+  flex: 1;
 }
- 
+
 .book-title {
-  font-size: 1.4em;
-  margin: 0;
-  color: #2C3E50;
+  font-size: 1.4em;
+  margin: 0;
+  color: #2C3E50;
 }
- 
+
 .book-author {
-  font-size: 1.1em;
-  color: #555;
-  margin: 5px 0;
+  font-size: 1.1em;
+  color: #555;
+  margin: 5px 0;
 }
- 
+
 .book-blurb {
-  font-size: 1em;
-  color: #333;
-  line-height: 1.5;
+  font-size: 1em;
+  color: #333;
+  line-height: 1.5;
 }
- 
+
 /* Responsive adjustments */
 @media (max-width: 600px) {
-  .book-item {
-    flex-direction: column;
-    align-items: center;
-  }
-  .book-cover {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-  .book-details {
-    text-align: center;
-  }
- 
-  nav ul {
-    flex-direction: column;
-    gap: 1px;
-  }
-  nav ul li {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-  nav ul li a {
-    padding: 5px 0;
-  }
+  .book-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .book-cover {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .book-details {
+    text-align: center;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    gap: 1px;
+  }
+  nav ul li {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  nav ul li a {
+    padding: 5px 0;
+  }
 }
- 
+
 /* Research Page */
 .research-projects {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
 }
- 
+
 .project {
-    display: flex;
-    align-items: center;
-    background: #f5f5f5;
-    padding: 15px;
-    border-left: 5px solid #2C3E50;
-    margin-bottom: 20px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 15px;
+    border-left: 5px solid #2C3E50;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
- 
+
 .project img {
-    width: 150px;
-    height: 100px;
-    object-fit: cover;
-    margin-right: 15px;
-    border-radius: 5px;
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 5px;
 }
- 
+
 .project-info h3 {
-    margin: 0;
-    font-size: 1.2em;
-    color: #2C3E50;
+    margin: 0;
+    font-size: 1.2em;
+    color: #2C3E50;
 }
- 
+
 .project-info p {
-    margin: 5px 0;
-    color: #555;
+    margin: 5px 0;
+    color: #555;
 }
- 
+
 .social-links {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
- 
+
 .social-links li {
-    display: inline;
+    display: inline;
 }
- 
+
 .social-links a {
-    text-decoration: none;
-    color: #2C3E50;
-    font-size: 1.2em;
-    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+    color: #2C3E50;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
 }
- 
+
 .social-links a:hover {
-    color: #0077b5; /* LinkedIn blue or change as needed */
+    color: #0077b5; /* LinkedIn blue or change as needed */
 }
- 
+
 /* Contact Section Styling */
 .contact-container {
-    max-width: 700px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
- 
+
 .contact-info p {
-    font-size: 1.2em;
-    color: #333;
-    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0;
 }
- 
+
 .contact-info a {
-    color: #2C3E50;
-    text-decoration: none;
-    font-weight: bold;
+    color: #2C3E50;
+    text-decoration: none;
+    font-weight: bold;
 }
- 
+
 .contact-info a:hover {
-    text-decoration: underline;
+    text-decoration: underline;
 }
- 
+
 .social-section {
-    margin-top: 20px;
+    margin-top: 20px;
 }
- 
+
 .social-links {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
- 
+
 .social-links li {
-    display: inline;
+    display: inline;
 }
- 
+
 .social-links a {
-    text-decoration: none;
-    color: #2C3E50;
-    font-size: 1.2em;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+    color: #2C3E50;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease-in-out;
 }
- 
+
 .social-links a:hover {
-    color: #1da1f2; /* Blue for social media hover */
+    color: #1da1f2; /* Blue for social media hover */
 }
- 
+
 .social-links img {
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* Additional Small Tweaks for Alignment */
+ul.social-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.research-interests {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.research-interests h2 {
+    font-size: 2em;
+    color: #2C3E50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.interest {
+    background: #f5f5f5;
+    padding: 15px;
+    border-left: 5px solid #2C3E50;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.interest h3 {
+    margin: 0;
+    font-size: 1.3em;
+    color: #2C3E50;
+}
+
+.interest p {
+    margin: 5px 0;
+    color: #555;
+    line-height: 1.5;
+}
+.media-text img {
+    width: 100%; /* Makes images responsive */
+    max-width: 600px; /* Set a reasonable max width for desktops */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 10px auto; /* Center images */
+}
+
+/* Adjust for smaller screens */
+@media screen and (max-width: 768px) {
+    .media-text img {
+        max-width: 150px; /* Makes images smaller on mobile */
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
+header {
+    background-image: url('photos/IMG_3918.jpg'); /* Replace with the actual path to your image */
+    background-size: cover;
+    background-position: center;
+    color: white; /* Ensures text is readable over the image */
+    padding: 20px;
+}
+.education-container {
+    display: flex;
+    flex-direction: column; /* Stack education items vertically */
+    gap: 20px; /* Space between each education item */
+}
+
+.education-item {
+    display: flex;
+    align-items: center; /* Aligns logo and text in the center */
+    gap: 20px; /* Space between logo and text */
+}
+
+.education-photo {
+    max-width: 80px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
 }
