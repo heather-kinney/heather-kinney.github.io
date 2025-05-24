@@ -638,3 +638,121 @@ body {
     background-attachment: fixed; /* Keeps the background fixed during scrolling */
     color: #333; /* Optional: Adjust text color for readability */
 }
+
+
+
+/* Current Projects Section */
+.current-projects-section {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 40px 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 80px auto; /* More space for the section */
+    max-width: 800px; /* Limit the width */
+}
+ 
+.current-projects-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+ 
+.project-container {
+    display: grid; /* Enables grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 20px; /* Adds space between grid items */
+    margin: 0 auto; /* Centers the grid container */
+    max-width: 1200px; /* Optional: Limits the width of the grid */
+}
+ 
+.project-item {
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Stacks the image and text vertically */
+    align-items: center; /* Centers content horizontally */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    overflow: hidden; /* Ensures content stays within the container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    background-color: #fff; /* Optional: Adds a white background */
+    padding: 20px; /* Adds padding inside the item */
+    margin: 0px 0px 20px 0px;
+}
+ 
+.project-image {
+    width: 100%; /* Makes the image span the full width of the container */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 10px 10px 0 0; /* Rounds the top corners of the image */
+    object-fit: cover; /* Ensures the image fits nicely */
+}
+ 
+.project-details {
+    padding: 15px 30px; /* Adds padding inside the text box */
+    text-align: left; /* Aligns text to the left */
+    width: 100%; /* Makes the text box span the full width of the container */
+}
+ 
+.project-details h3 {
+    font-size: 1.2rem;
+    color: #333; /* Dark text color for readability */
+    margin: 0 0 5px; /* Adds spacing below the title */
+    text-align: center;
+}
+.project-details h4 {
+    margin: 0 0 5px; /* Adds spacing below the title */
+    text-align: center;
+}
+ 
+.project-details p {
+    font-size: 1rem;
+    color: #555; /* Slightly lighter text color for the description */
+    margin: 0 10px;
+}
+.research-interests {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 40px 20px; /* Adds padding inside the section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 80px auto; /* Centers the section and adds vertical spacing */
+    max-width: 800px; /* Limits the width of the section */
+}
+ 
+.research-interests h2 {
+    font-size: 2.5rem; /* Matches the heading size of other sections */
+    color: #333; /* Dark text color */
+    margin-bottom: 30px; /* Adds spacing below the heading */
+    text-transform: uppercase; /* Makes the text uppercase */
+    letter-spacing: 1px; /* Adds spacing between letters */
+    text-align: center; /* Centers the heading */
+}
+ 
+.interest-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+}
+ 
+.interest {
+    display: flex; /* Enables flexbox for alignment */
+    flex-direction: column; /* Stacks text vertically */
+    background-color: #fff; /* White background for each item */
+    padding: 20px; /* Adds padding inside each item */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for each item */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds hover effect */
+}
+ 
+.interest h3 {
+    font-size: 1.5rem; /* Matches the title size of other sections */
+    color: #2C3E50; /* Darker color for emphasis */
+    margin-bottom: 10px; /* Adds spacing below the title */
+    text-align: left; /* Aligns text to the left */
+}
+ 
+.interest p {
+    font-size: 1rem; /* Matches the paragraph size of other sections */
+    color: #555; /* Slightly lighter text color */
+    margin: 0; /* Removes default margins */
+    line-height: 1.6; /* Improves readability */
+}
