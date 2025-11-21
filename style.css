@@ -770,6 +770,6 @@ body {
     }
 
     header, footer {
-        padding: 15px 20px; /* Ensures the header and footer also fit well */
+        padding: 20px 20px; /* Ensures the header and footer also fit well */
     }
 }
