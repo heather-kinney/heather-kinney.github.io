@@ -759,3 +759,17 @@ body {
     margin: 0; /* Removes default margins */
     line-height: 1.6; /* Improves readability */
 }
+@media (max-width: 600px) {
+    section {
+        padding: 20px; /* Ensures internal spacing within sections */
+        margin: 20px;  /* Provides space on the outer edges */
+    }
+
+    .welcome h2, .welcome p, .bio p, .education-details p { 
+        text-align: justify; /* Optional: Improves readability on narrow screens */
+    }
+
+    header, footer {
+        padding: 15px 20px; /* Ensures the header and footer also fit well */
+    }
+}
