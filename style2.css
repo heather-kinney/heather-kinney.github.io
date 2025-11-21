@@ -1,0 +1,9 @@
+/* Apply the background image to the entire body */
+body {
+    background-image: url('photos/IMG_8098.jpg'); /* Replace with your background image path */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    color: #333; /* Optional: Adjust text color for readability */
+}
