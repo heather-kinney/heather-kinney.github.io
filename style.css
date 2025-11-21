@@ -225,8 +225,8 @@ footer {
     padding: 10px;
 }
 
-/* Reading List Section */
-.reading-list {
+/*Reading List Section */
+/*.reading-list {
   max-width: 960px;
   margin: 40px auto;
   padding: 0 20px;
@@ -238,17 +238,17 @@ footer {
   border-bottom: 2px solid #2C3E50;
   padding-bottom: 5px;
   margin-bottom: 20px;
-}
+}*/
 
 /* Books container with flex layout */
-.books-container {
+/*.books-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
 /* Each book item */
-.book-item {
+/*.book-item {
   display: flex;
   background-color: #f9f9f9;
   border-left: 4px solid #2C3E50;
@@ -261,7 +261,7 @@ footer {
 }
 
 /* Book cover styling */
-.book-cover {
+/*.book-cover {
   width: 100px;
   height: auto;
   margin-right: 20px;
@@ -270,7 +270,7 @@ footer {
 }
 
 /* Book details styling */
-.book-details {
+/*.book-details {
   flex: 1;
 }
 
@@ -293,7 +293,7 @@ footer {
 }
 
 /* Responsive adjustments */
-@media (max-width: 600px) {
+/*@media (max-width: 600px) {
   .book-item {
     flex-direction: column;
     align-items: center;
@@ -319,6 +319,7 @@ footer {
     padding: 5px 0;
   }
 }
+*/
 
 /* Research Page */
 .research-projects {
@@ -648,7 +649,7 @@ body {
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     margin: 80px auto; /* More space for the section */
-    max-width: 800px; /* Limit the width */
+    max-width: 750px; /* Limit the width */
 }
  
 .current-projects-section h2 {
