@@ -1,0 +1,202 @@
+/* Full-page background */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Lora', serif; /* body font */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  background-image: url('photos/IMG_8098.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Hero section centered */
+header.hero {
+  flex: 1; /* take available space */
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* centers vertically */
+  position: relative;
+  padding: 20px;
+}
+
+header.hero h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  margin: 0;
+}
+
+header.hero h2 {
+  font-size: 1.6rem;
+  margin: 10px 0 20px;
+}
+
+.profile-photo {
+  width: 220px;
+  border-radius: 50%;
+  margin: 20px 0;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+}
+
+/* Button */
+.btn-primary {
+  display: inline-block;
+  background-color: #2C3E50;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #34495e;
+}
+
+/* Hamburger */
+.nav-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  flex-direction: column;
+  background-color: rgba(44,62,80,0.9);
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  border-radius: 8px;
+}
+
+.nav-links.active {
+  display: flex;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.nav-links li a:hover {
+  background-color: #34495e;
+}
+
+/* Footer always at bottom */
+/* Footer always at bottom */
+footer {
+  background-color: rgba(44,62,80,0.9);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Base: desktop/tablet */
+.social-links {
+  list-style: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;   /* centered row on desktop */
+  gap: 15px;
+}
+
+.social-links li {
+  display: inline-flex;      /* allow centering of contents */
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;         /* desktop label size */
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.social-links a:hover {
+  color: #1da1f2;
+}
+
+.social-links img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* iPhone / small screens: evenly distribute, icons only */
+@media (max-width: 600px) {
+  .social-links {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;  /* evenly across full width */
+    align-items: center;
+    gap: 0;                         /* no gaps between slots */
+    margin: 10px 0 0 0;
+    padding: 0;
+  }
+
+  .social-links li {
+    flex: 1;                        /* equal-width slots */
+    display: flex;                  /* center icon per slot */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-links a {
+    font-size: 0;                   /* hide text labels */
+    gap: 0;
+  }
+
+  .social-links a i {
+    font-size: 1.8rem;              /* keep icons visible and larger */
+    line-height: 1;
+    display: inline-block;
+  }
+
+  .social-links img {
+    width: 24px;                    /* bump size for touch-friendly */
+    height: 24px;
+  }
+}
+
+
+img[src*="bluesky-brands-solid.svg"] {
+  filter: invert(1);   /* flips black to white */
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  header.hero h1 {
+    font-size: 2rem;
+  }
+  header.hero h2 {
+    font-size: 1.2rem;
+  }
+  .profile-photo {
+    width: 160px;
+  }
+}
+
