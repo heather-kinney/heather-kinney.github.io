@@ -105,7 +105,7 @@ header.hero h2 {
 /* Footer always at bottom */
 /* Footer always at bottom */
 footer {
-  background-color: rgba(44,62,80,0.9);
+  background-color: rgba(44,62,80,0.75);
   color: white;
   text-align: center;
   padding: 20px;
