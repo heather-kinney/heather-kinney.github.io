@@ -1,30 +1,31 @@
-/* Full-page background */
+/* ===== Base Layout ===== */
 html, body {
   height: 100%;
   margin: 0;
-  font-family: 'Lora', serif; /* body font */
+  font-family: 'Lora', serif;
   color: #333;
   display: flex;
   flex-direction: column;
-  background-image: url('photos/IMG_8098.jpg'); /* Replace with your image */
+  background-image: url('photos/IMG_8098.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
-/* Hero section centered */
+/* ===== Hero Section ===== */
 header.hero {
-  flex: 1; /* take available space */
+  flex: 1;
   color: white;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* centers vertically */
+  justify-content: center;
   position: relative;
-  padding: 20px;
+  padding: 0; /* remove extra space above profile photo */
 }
 
+/* Title centered over photo */
 header.hero h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -32,19 +33,16 @@ header.hero h1 {
   margin: 0;
 }
 
+
+
+
 header.hero h2 {
   font-size: 1.6rem;
   margin: 10px 0 20px;
 }
 
-.profile-photo {
-  width: 220px;
-  border-radius: 50%;
-  margin: 20px 0;
-  box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
-}
 
-/* Button */
+/* ===== Buttons ===== */
 .btn-primary {
   display: inline-block;
   background-color: #2C3E50;
@@ -60,11 +58,11 @@ header.hero h2 {
   background-color: #34495e;
 }
 
-/* Hamburger */
+/* ===== Hamburger Toggle ===== */
 .nav-toggle {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 10px; /* align with top of photo */
+  right: 10px;
   background: none;
   border: none;
   color: white;
@@ -73,7 +71,7 @@ header.hero h2 {
   z-index: 1000;
 }
 
-/* Navigation links */
+/* ===== Navigation ===== */
 .nav-links {
   list-style: none;
   margin: 0;
@@ -102,27 +100,25 @@ header.hero h2 {
   background-color: #34495e;
 }
 
-/* Footer always at bottom */
-/* Footer always at bottom */
+/* ===== Footer ===== */
 footer {
-  background-color: rgba(44,62,80,0.75);
+  background-color: rgba(44,62,80,0.9);
   color: white;
   text-align: center;
   padding: 20px;
 }
 
-/* Base: desktop/tablet */
 .social-links {
   list-style: none;
   margin: 10px 0 0 0;
   padding: 0;
   display: flex;
-  justify-content: center;   /* centered row on desktop */
+  justify-content: center;
   gap: 15px;
 }
 
 .social-links li {
-  display: inline-flex;      /* allow centering of contents */
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 }
@@ -130,7 +126,7 @@ footer {
 .social-links a {
   text-decoration: none;
   color: white;
-  font-size: 1.2rem;         /* desktop label size */
+  font-size: 1.2rem;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -146,48 +142,39 @@ footer {
   object-fit: contain;
 }
 
-/* iPhone / small screens: evenly distribute, icons only */
+/* Mobile Footer Icons */
 @media (max-width: 600px) {
   .social-links {
-    display: flex;
     width: 100%;
-    justify-content: space-evenly;  /* evenly across full width */
-    align-items: center;
-    gap: 0;                         /* no gaps between slots */
-    margin: 10px 0 0 0;
-    padding: 0;
-  }
-
-  .social-links li {
-    flex: 1;                        /* equal-width slots */
-    display: flex;                  /* center icon per slot */
-    align-items: center;
-    justify-content: center;
-  }
-
-  .social-links a {
-    font-size: 0;                   /* hide text labels */
+    justify-content: space-evenly;
     gap: 0;
   }
-
-  .social-links a i {
-    font-size: 1.8rem;              /* keep icons visible and larger */
-    line-height: 1;
-    display: inline-block;
+  .social-links li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
   }
-
+  .social-links a {
+    font-size: 0;
+    gap: 0;
+  }
+  .social-links a i {
+    font-size: 1.8rem;
+    line-height: 1;
+  }
   .social-links img {
-    width: 24px;                    /* bump size for touch-friendly */
+    width: 24px;
     height: 24px;
   }
-}
 
+
+}
 
 img[src*="bluesky-brands-solid.svg"] {
-  filter: invert(1);   /* flips black to white */
+  filter: invert(1);
 }
 
-/* Responsive tweaks */
+/* ===== Responsive Hero ===== */
 @media (max-width: 768px) {
   header.hero h1 {
     font-size: 2rem;
@@ -195,8 +182,150 @@ img[src*="bluesky-brands-solid.svg"] {
   header.hero h2 {
     font-size: 1.2rem;
   }
+}
+
+/* ===== About Page ===== */
+
+/* About page override for no image on background */
+body.about-page {
+  background-image: none;       /* removes image */
+  background-color: #768fad;    /* solid background */
+}
+
+/* Title centered over photo for about page only */
+h1.about-header {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  margin: 0;
+  position: absolute; 
+  top: 50%; /* center vertically over profile photo */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+/* ===== Profile/Header Photos ===== */
+.profile-photo {
+  width: 1000px;
+  border-radius: 0;
+  margin: 0; /* remove extra spacing above */
+ /* box-shadow: 0px 4px 6px rgba(0,0,0,0.3);*/
+  position: relative;
+  object-fit: contain;
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fdfaf3; /* solid background instead of image */
+}
+
+.bio {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+  /*box-shadow: 0 4px 6px rgba(0,0,0,0.1);*/
+  padding: 20px;
+  background-color: #e3f2fd;
+}
+
+.bio p {
+  font-size: 1.1em;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .about-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .bio {
+    width: 60%;
+  }
+  .accordion-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+/* ===== Mobile Profile Photo ===== */
+@media (max-width: 768px) {
   .profile-photo {
-    width: 160px;
+    width: 100vw;          /* smaller on iPhone so text fits */
+    height: auto;
+    border-radius: 0;
+    object-fit: cover;
+   /* margin-top: 20px;
+    margin-bottom: 20px;*/
   }
 }
 
+/* ===== Accordion ===== */
+.accordion-section {
+  margin-bottom: 10px;
+}
+
+.accordion-label {
+  display: block;
+  background-color: #2C3E50;
+  color: white;
+  padding: 18px;
+  font-size: 1.2em;
+  cursor: pointer;
+  text-align: left;
+  border: none;
+  width: 80%;
+  border-radius: 5px;
+}
+
+.accordion-label:hover {
+  background-color: #34495e;
+}
+
+.accordion-input {
+  display: none;
+}
+
+.accordion-input:checked + .accordion-label + .accordion-content {
+  display: block;
+}
+
+.accordion-content {
+  display: none;
+  background-color: #f4f4f9;
+  padding: 18px;
+  border-left: 4px solid #2C3E50;
+  border-radius: 0 0 5px 5px;
+}
+
+.accordion-content ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.accordion-content li {
+  margin-bottom: 8px;
+}
+
+/* Education Items */
+.education-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.education-photo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.education-details h3 {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+}
