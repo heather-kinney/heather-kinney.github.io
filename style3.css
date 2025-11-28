@@ -68,7 +68,7 @@ header.hero h2 {
   color: white;
   font-size: 2rem;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 2000;
 }
 
 /* ===== Navigation ===== */
@@ -83,6 +83,7 @@ header.hero h2 {
   top: 60px;
   right: 20px;
   border-radius: 8px;
+  z-index: 2000;
 }
 
 .nav-links.active {
