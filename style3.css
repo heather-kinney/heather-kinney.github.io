@@ -40,7 +40,10 @@ header.hero h2 {
   font-size: 1.6rem;
   margin: 10px 0 20px;
 }
-
+header.hero h3 {
+  font-size: 1.6rem;
+  margin: 10px 0 20px;
+}
 
 /* ===== Buttons ===== */
 .btn-primary {
@@ -182,6 +185,9 @@ img[src*="bluesky-brands-solid.svg"] {
   }
   header.hero h2 {
     font-size: 1.2rem;
+  }
+  header.hero h3 {
+    font-size: 1.0rem;
   }
 }
 
