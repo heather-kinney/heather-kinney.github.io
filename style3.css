@@ -45,6 +45,12 @@ header.hero h3 {
   margin: 10px 0 20px;
 }
 
+@media (max-width: 600px) {
+  .header.hero h3 {
+    display: none;
+  }
+}
+
 /* ===== Buttons ===== */
 .btn-primary {
   display: inline-block;
