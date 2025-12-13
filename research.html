@@ -11,18 +11,36 @@
  
 <header>
     <h1>Research Projects</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
-            <li><a href="research.html"><i class="fas fa-flask"></i> Research</a></li>
-       <!--     <li><a href="readinglist.html"><i class="fas fa-book"></i> Reading List</a></li>-->
-            <li><a href="media.html"><i class="fas fa-video"></i> In the Media</a></li>
-            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-         </ul>
-    </nav>
 </header>
- 
+ <!-- Navigation -->
+<nav aria-label="Main Navigation">
+  <ul class="nav-links">
+    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+    <li><a href="research.html"><i class="fas fa-flask"></i> Research</a></li>
+    <li><a href="media.html"><i class="fas fa-video"></i> In the Media</a></li>
+    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Footer -->
+<footer>
+  <ul class="social-links">
+    <li><a href="http://linkedin.com/in/heather-kinney-crst" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+    <li><a href="https://www.instagram.com/hezz.the.coastal.scientist" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+    <li><a href="https://bsky.app/profile/hkcoastal.bsky.social" target="_blank"><img src="photos/bluesky-brands-solid.svg" alt="BlueSky"> Bluesky</a></li>
+    <li><a href="https://www.goodreads.com/user/show/179591031" target="_blank"><i class="fab fa-goodreads"></i> Goodreads</a></li>
+  </ul>
+</footer>
+
+<!-- JS Toggle -->
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
 <section class="research-projects">
     <h2>Current Projects</h2>
  
